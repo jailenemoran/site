@@ -1,0 +1,276 @@
+/* === ESTILOS GENERALES === */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #F0F0F0; /* Fondo gris perla */
+    color: #333333; /* Texto principal gris oscuro */
+  }
+  
+  /* === ENCABEZADO === */
+  header {
+    background-color: #CCA9DD; /* Lila */
+    color: #333333; /* Texto oscuro para mejor contraste */
+    padding: 1.5rem 0;
+    text-align: center;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+  }
+  
+  /* === CONTENEDOR PRINCIPAL === */
+  main {
+    padding: 2rem;
+  }
+  
+  /* === SECCIONES === */
+  #posts, #new-post {
+    background: #F5DEB3; /* Beige cálido */
+    border: 2px solid #b3b3b3; /* Borde gris */
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* === CONTENEDOR DE POSTS === */
+  #post-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+  }
+  
+  /* === ESTILO DE CADA POST === */
+  .post {
+    border: 1px solid #DDA0DD; /* Mauve */
+    border-radius: 10px;
+    padding: 1rem;
+    background: #E6E6FA; /* Lavanda pastel */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .post h3 {
+    margin: 0 0 0.5rem;
+    color: #CCA9DD; /* Lila */
+  }
+  
+  /* === FORMULARIO === */
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  form input, form textarea, form button {
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+    border: 1px solid #DDA0DD; /* Mauve */
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  /* === CAMPOS DE ENTRADA === */
+  form input, form textarea {
+    background: #F5F5F5; /* Blanco crema */
+    color: #333;
+  }
+  
+  /* === BOTONES === */
+  form button {
+    background: #87CEEB; /* Azul cielo claro */
+    color: #F5F5F5; /* Blanco crema */
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  form button:hover {
+    background: #CCA9DD; /* Lila */
+    color: #F5F5F5;
+  }
+  
+  /* === ENLACES === */
+  a {
+    color: #87CEEB; /* Azul cielo claro */
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  a:hover {
+    color: #b3b3b3; /* Gris mediano */
+  }
+  
+  /* === PIE DE PÁGINA === */
+  footer {
+    text-align: center;
+    padding: 1rem 0;
+    background: #CCA9DD; /* Lila */
+    color: #333333; /* Gris oscuro */
+    font-size: 0.9rem;
+  }
+
+  /* === BARRA DE NAVEGACIÓN === */
+nav {
+  background: #CCA9DD; /* Lila */
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  color: #333333; /* Gris oscuro */
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  background: #87CEEB; /* Azul cielo claro */
+  color: #F5F5F5; /* Blanco crema */
+  border-radius: 5px;
+}
+
+/* === SECCIÓN SOBRE MÍ === */
+#about {
+  background: #E6E6FA; /* Lavanda pastel */
+  border: 2px solid #DDA0DD; /* Mauve */
+  border-radius: 10px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+#about h2 {
+  color: #CCA9DD; /* Lila */
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+#about p {
+  font-size: 1.1rem;
+  color: #333333; /* Gris oscuro */
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+/* === SECCIÓN CONTACTO === */
+#contact {
+  background: #F5DEB3; /* Beige cálido */
+  border: 2px solid #B3B3B3; /* Gris topo */
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+#contact h2 {
+  color: #CCA9DD; /* Lila */
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+#contact p {
+  font-size: 1.1rem;
+  color: #333333; /* Gris oscuro */
+  max-width: 700px;
+  margin: 0 auto 1.5rem;
+  line-height: 1.8;
+}
+
+/* === FORMULARIO DE CONTACTO === */
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+#contact-form input, 
+#contact-form textarea {
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  border: 1px solid #DDA0DD; /* Mauve */
+  border-radius: 5px;
+  font-size: 1rem;
+  background: #F5F5F5; /* Blanco crema */
+  color: #333;
+}
+
+#contact-form button {
+  background: #87CEEB; /* Azul cielo claro */
+  color: #F5F5F5; /* Blanco crema */
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 5px;
+}
+
+#contact-form button:hover {
+  background: #CCA9DD; /* Lila */
+  color: #F5F5F5;
+}
+
+/* Contenedor de botones */
+.btn-container {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+/* Botones base */
+.edit-btn, .delete-btn {
+  border: none;
+  border-radius: 20px;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* Botón Editar */
+.edit-btn {
+  background-color: #8E44AD;
+  color: white;
+}
+
+.edit-btn:hover {
+  background-color: #9B59B6;
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(142, 68, 173, 0.3);
+}
+
+/* Botón Eliminar */
+.delete-btn {
+  background-color: #E74C3C;
+  color: white;
+}
+
+.delete-btn:hover {
+  background-color: #C0392B;
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(231, 76, 60, 0.3);
+}
